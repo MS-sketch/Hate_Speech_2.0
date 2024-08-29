@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Social Media App</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame_6">
+      <property name="styleSheet">
+       <string notr="true">background-color: #343541;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_16">
+       <item>
+        <widget class="QListWidget" name="output_window">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QListWidget {
+    color: white;
+}</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_7">
+         <property name="minimumSize">
+          <size>
+           <width>400</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #343541;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLineEdit" name="MessageInput_2">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">    QLineEdit {
+        border: 2px solid #565869;
+        border-radius: 10px;
+        padding: 12px;
+        font-size: 16px;
+        background-color: #3B3B3B;
+        color: #FFFFFF;
+    }
+
+    QLineEdit::placeholder {
+        color: #9CA3AF;
+    }
+
+</string>
+            </property>
+            <property name="placeholderText">
+             <string>Type a message...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="SendButton_2">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #10A37F;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+QPushButton:hover {
+    background-color: #13C59D;
+}
+
+QPushButton:disabled {
+    background-color: #A0A0A0;  /* Grey background */
+    color: #D3D3D3;  /* Light grey text color */
+}
+
+QPushButton#SendButton {
+    background-color: #19B797;
+}
+
+QPushButton#SendButton:hover {
+    background-color: #13C59D;
+}
+
+QPushButton#SendButton:disabled {
+    background-color: #A0A0A0;  /* Grey background for SendButton */
+    color: #D3D3D3;  /* Light grey text color for SendButton */
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Post</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
